@@ -39,7 +39,7 @@ export default function App() {
         formData.append("audio", audioBlob, "audio.webm");
 
         try {
-          const response = await fetch("http://localhost:3000/analisar", {
+          const response = await fetch("https://nondrying-collette-sedulously.ngrok-free.dev/analisar", {
             method: "POST",
             body: formData,
           });
