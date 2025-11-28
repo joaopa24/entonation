@@ -32,7 +32,7 @@ export default function App() {
       };
 
       mediaRecorderRef.current.onstop = async () => {
-        setStatus("⏳ Enviando para análise...");
+        setStatus("⏳ Enviando para análise....");
 
         const audioBlob = new Blob(chunksRef.current, { type: "audio/webm" });
         const formData = new FormData();
